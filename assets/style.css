@@ -1,31 +1,33 @@
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: auto;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: auto;
 }
+
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
 
-body{
-    background-color: #eddcd2;
+body {
+	background-color: #eddcd2;
 }
 
-p{
-    color: black;
-    font-size: 15px;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 5px;
-    line-height: normal;
+p {
+	color: black;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+	line-height: normal;
 }
+
 img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -33,71 +35,96 @@ img {
 	align-items: center;
 	justify-content: center;
 }
-#first{
-    display: inline-block;
-    padding: 15px 20px;
-    color:#fffbff;
-    border: 4px solid #d3ab9d;
-    font-size: 9px;
-    margin-top: 30px;
+
+#first {
+	display: inline-block;
+	padding: 15px 20px;
+	color: #fffbff;
+	border: 4px solid #d3ab9d;
+	font-size: 9px;
+	/*
+	margin-top: 30px;
+	*/
 }
-#first:hover{
-    color: #daeaf6;
-    background: color #bde0fe; 
+
+#first:hover {
+	color: #daeaf6;
+	background: color #bde0fe;
 }
+
+.column {
+	float: left;
+	width: 50%;
+	align-items: center;
+}
+
+/* Clear floats after the columns */
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* header section */
-.header {
- padding: 20px;
- font-family: Arial, Helvetica, sans-serif;
- background-color: #EAC9C1;
- color: #d3ab9d;
- cursor: grab;
- display: block;
+header {
+	padding: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #EAC9C1;
+	color: #d3ab9d;
+	cursor: grab;
+	display: block;
 }
 
-.header #name h1{
-    font-size: 5rem;
-    color: #fff1e6;
-    display: inline-block;
+header div #name {
+	width: 30%
 }
 
-.header #name h1 span{
-    color: #fffbff;
-    font-size: 5rem;
-    
+header #name h1 {
+	font-size: 5rem;
+	color: #fff1e6;
+	display: inline-block;
+	max-height: 100px;
 }
 
-.header nav{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    float: right;
-    margin-right: 20px;
-    color: #fefeff;
-    
+header #name h1 span {
+	color: #fffbff;
+	font-size: 5rem;
+
 }
 
-.header nav ul{
-    list-style: none;
-    
+header nav {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 15px;
+	float: right;
+	margin-right: 20px;
+	color: #fefeff;
+
 }
 
-.header nav ul li{
-    display:inline-block;
-    margin-left: 30px;
-    font-size: 3rem;
-    padding-top: 5px;
+header nav ul {
+	list-style: none;
+
 }
+
+header nav ul li {
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 3rem;
+	padding-top: 5px;
+}
+
 /* end header */
 
 /* home */
 .home {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url(./img/portfolio.jpeg) ;
-    background-size: cover;
-    background-position: center;
+	height: 800px;
+	width: 100%;
+	margin-bottom: 25px;
+	background-image: url(./img/portfolio.jpeg);
+	background-size: cover;
+	background-position: center;
 }
+
 /* end home */
 /* about me */
 #aboutme {
@@ -106,22 +133,24 @@ img {
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-#aboutme #content{
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 35px;
-    font-family: fantasy;
+
+#aboutme #content {
+	width: 75%;
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 35px;
+	font-family: fantasy;
 
 }
 
-#aboutme #aboutme-img{
-    height: 100%;
+#aboutme #aboutme-img {
+	height: 100%;
 	width: 100%;
 	position: left;
 	border: 10px solid salmon;
 
 }
+
 /* end about me */
 /* projects */
 #projects .projects {
@@ -132,13 +161,14 @@ img {
 }
 
 #projects .all-projects {
-	display: flex;
+	display:contents;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
+
 #projects .project-item {
-	display: flex;
+	display: table-row;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -147,6 +177,7 @@ img {
 	overflow: hidden;
 	border-radius: 10px;
 }
+
 #projects .project-info {
 	padding: 30px;
 	flex-basis: 50%;
@@ -158,24 +189,30 @@ img {
 	background-image: linear-gradient(60deg, #ffc7dd 0%, #eeddd3 100%);
 	color: white;
 }
+
 #projects .project-info h1 {
 	font-size: 2rem;
 	font-weight: 500;
 }
+
 #projects .project-info h2 {
 	font-size: 1rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
+
 #projects .project-info p {
 	color: white;
 }
+
 #projects .project-img {
 	flex-basis: 60%;
+	display: block;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
+
 #projects .project-img:after {
 	content: '';
 	position: absolute;
@@ -186,32 +223,37 @@ img {
 	background-image: linear-gradient(80deg, #29323c 0%, #485563 100%);
 	opacity: .7;
 }
+
 #projects .project-img img {
 	transition: .3s ease transform;
 }
+
 #projects .project-item:hover .project-img img {
 	transform: scale(3.2);
 }
+
 /* end project */
 /* contact */
 #contact {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    flex-direction: column;
-  }
-  #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	height: fit-content;
+	box-shadow: 0 4px 8px 0 rgb(201, 161, 184);
+	text-align: center;
+	font-family: arial;
+	flex-direction: column;
 }
-#footer .footer {
+
+footer {
+	background-image: linear-gradient(60deg, #9eacb6 0%, #96b0ca 100%);
+}
+
+footer {
 	min-height: 200px;
 	flex-direction: column;
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
-#footer h2 {
+
+footer h2 {
 	color: white;
 	font-weight: 500;
 	font-size: 1.8rem;
@@ -219,32 +261,45 @@ img {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-#footer .social-icon {
-	display: flex;
+
+footer .social-icon {
+	content: "";
+	display: table;
+	clear: both;
 	margin-bottom: 30px;
 }
-#footer .social-item {
+
+footer .social-item {
 	height: 50px;
 	width: 50px;
 	margin: 0 5px;
 }
-#footer .social-item img {
+
+footer .social-item img {
 	filter: grayscale(1);
 	transition: .3s ease filter;
 }
-#footer .social-item:hover img {
+
+footer .social-item:hover img {
 	filter: grayscale(0);
 }
-#footer p {
+
+footer p {
 	color: white;
 	font-size: 1.3rem;
 }
+
 /* mediaquery */
-@media screen  and (max-width: 992px){
-.html {width: 50%;}
-    
+@media screen and (max-width: 992px) {
+	.html {
+		width: 50%;
+	}
+
 }
-@media screen and (max-width:768px){
-    .html{width: 100%;}
-    
-}
+
+@media screen and (max-width:768px) {
+	.html {
+		width: 100%;
+	}
+
+} 
