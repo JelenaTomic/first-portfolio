@@ -5,7 +5,7 @@
  
     
 ## Description 
-This project is created to provide our basic knowledge about advancest css, while providing basic information about myself.
+This project is created to provide knowledge about advancest css, while providing basic information about myself.
 Site visitor can also contact me using this site or check out my other projects.
 
 
