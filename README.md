@@ -3,7 +3,9 @@
  ##Project Name
  Jelena Tomic Portfolio
  
-    
+ ## Deployed app
+ https://jelenatomic.github.io/first-portfolio/
+ 
 ## Description 
 This project is created to provide knowledge about advancest css, while providing basic information about myself.
 Site visitor can also contact me using this site or check out my other projects.
